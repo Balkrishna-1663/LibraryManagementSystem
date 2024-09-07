@@ -1,0 +1,13 @@
+﻿@model IEnumerable<LibraryManagementSystem.Models.Book>
+
+<html >
+    <head><title>This is the api call for books</title></head>
+    <body>
+        <h1>BooksController</h1>
+    @foreach(var books in Model)
+    {
+        <div>@books.Title</div>
+        <div>@books.Price</div>
+    }
+</body>
+</html>
